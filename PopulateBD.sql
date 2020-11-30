@@ -20,17 +20,24 @@ INSERT INTO PROFESSOR (cod, cpf, nome, lattes, dpto) VALUES ('168', '678349672',
 INSERT INTO PROFESSOR (cod, cpf, nome, lattes, dpto) VALUES ('397', '946723504', 'Roberto Farias', 'https://lattes.com/1GDAA52', '1100');
 
 
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('1', 'Cálculo Vetorial', 'Palestra sobre vetores e tensores', 'Youtube', 'https://youtube.com/YUHDs0'); 
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('2', 'IA na Educação', 'Palestra sobre Inteligencia Artificial', 'ZOOM', 'https://zoom.com/IAS-QPE-TLK');  
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('3', 'Computação Hoje', 'Palestra sobre computação na atualidade', 'Skype', 'https://Skype.com/GasQR32');  
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('4', 'Importancia da Matematica', 'Palestra sobre a matematica', 'Teams', 'https://Teams.com/ASC13A2&2');  
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('5', 'Atividade fisica na pandemia', 'Palestra sobre atividade fisica', 'Youtube', 'https://youtube.com/YTDLs0');  
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('6', 'Politica moderna', 'Palestra sobre politica moderna', 'Meet', 'https://Meet.com/OPQF1v2');  
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('7', 'Calculo 1 PT.1', 'Aula 1 de Calculo 1', 'Meet', 'https://Meet.com/AFDBYHI');  
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('8', 'Calculo 1 PT.2', 'Aula 2 de Calculo 1', 'Meet', 'https://Meet.com/AFDBYHI');  
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('9', 'Calculo 1 PT.3', 'Aula 3 de Calculo 1', 'Meet', 'https://Meet.com/AFDBYHI'); 
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('10', 'Banco de Dados Aula 1', 'Aula 1 de Banco de Dados', 'Teams', 'https://Teams.com/OFASI12&9');  
-INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('11', 'Banco de Dados Aula 2', 'Aula 2 de Banco de Dados', 'Teams', 'https://Meet.com/OFASI12&9');  
+INSERT INTO PLATAFORMA (cod, nome, link) VALUES ('1', 'Skype', 'www.skype.com');
+INSERT INTO PLATAFORMA (cod, nome, link) VALUES ('2', 'Teams', 'www.teams.com');
+INSERT INTO PLATAFORMA (cod, nome, link) VALUES ('3', 'Zoom', 'www.zoom.com');
+INSERT INTO PLATAFORMA (cod, nome, link) VALUES ('4', 'Meet', 'www.meet.com');
+INSERT INTO PLATAFORMA (cod, nome, link) VALUES ('5', 'Youtube', 'www.youtube.com');
+
+
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('1', 'Cálculo Vetorial', 'Palestra sobre vetores e tensores', '5', 'https://youtube.com/YUHDs0'); 
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('2', 'IA na Educação', 'Palestra sobre Inteligencia Artificial', '3', 'https://zoom.com/IAS-QPE-TLK');  
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('3', 'Computação Hoje', 'Palestra sobre computação na atualidade', '1', 'https://Skype.com/GasQR32');  
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('4', 'Importancia da Matematica', 'Palestra sobre a matematica', '2', 'https://Teams.com/ASC13A2&2');  
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('5', 'Atividade fisica na pandemia', 'Palestra sobre atividade fisica', '5', 'https://youtube.com/YTDLs0');  
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('6', 'Politica moderna', 'Palestra sobre politica moderna', '4', 'https://Meet.com/OPQF1v2');  
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('7', 'Calculo 1 PT.1', 'Aula 1 de Calculo 1', '4', 'https://Meet.com/AFDBYHI');  
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('8', 'Calculo 1 PT.2', 'Aula 2 de Calculo 1', '4', 'https://Meet.com/AFDBYHI');  
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('9', 'Calculo 1 PT.3', 'Aula 3 de Calculo 1', '4', 'https://Meet.com/AFDBYHI'); 
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('10', 'Banco de Dados Aula 1', 'Aula 1 de Banco de Dados', '2', 'https://Teams.com/OFASI12&9');  
+INSERT INTO MATERIAL_VIDEO (cod, titulo, descricao, plataforma, link) VALUES ('11', 'Banco de Dados Aula 2', 'Aula 2 de Banco de Dados', '2', 'https://Meet.com/OFASI12&9');  
 
 
 INSERT INTO PALESTRAS (cod, titulo, datahora, prof, video) VALUES ('1', 'Cálculo Vetorial', '2020-12-12', '211', '1');
@@ -87,28 +94,20 @@ INSERT INTO TAGS_VIDEO (video_id, tag) VALUES ('10','Introducao');
 INSERT INTO TAGS_VIDEO (video_id, tag) VALUES ('11','CRUD');
 
 
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('1', '1332321');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('1', '7235156');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('1', '6167235');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('2', '8281290');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('2', '7235156');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('3', '8281290');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('3', '6167235');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('3', '7235156');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('4', '7235156');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('4', '1332321');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('5', '7235156');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('5', '8281290');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('5', '3457125');
-INSERT INTO MATRICULAS (disciplina, aluno) VALUES ('6', '3457125');
-
-
-
-INSERT INTO NOTAS (disciplina, aluno, notas) VALUES ('2', '1332321', 80);
-INSERT INTO NOTAS (disciplina, aluno, notas) VALUES ('1', '1332321', 80);
-INSERT INTO NOTAS (disciplina, aluno, notas) VALUES ('5', '8281290', 80);
-INSERT INTO NOTAS (disciplina, aluno, notas) VALUES ('3', '3457125', 80);
-INSERT INTO NOTAS (disciplina, aluno, notas) VALUES ('3', '6167235', 80);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('1', '1332321', 80);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('1', '7235156', 63);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('1', '6167235', 12);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('2', '8281290', 97);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('2', '7235156', 99);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('3', '8281290', 33);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('3', '6167235', 25);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('3', '7235156', 62);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('4', '7235156', 80);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('4', '1332321', 72);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('5', '7235156', 76);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('5', '8281290', 76);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('5', '3457125', 80);
+INSERT INTO MATRICULAS (disciplina, aluno, nota) VALUES ('6', '3457125', 49);
 
 
 CREATE VIEW GetPalestras AS
@@ -117,7 +116,7 @@ JOIN PROFESSOR ON PROFESSOR.cod = PALESTRAS.prof
 JOIN MATERIAL_VIDEO AS VID ON VID.cod = PALESTRAS.video
 WHERE PALESTRAS.datahora > CURDATE() AND PALESTRAS.datahora < CURDATE() + INTERVAL 30 DAY;
 
-SELECT * FROM GetPalestras;
+#SELECT * FROM GetPalestras;
 
 DELIMITER $$
 CREATE PROCEDURE INSCRICAO (IN cod VARCHAR(25), IN matricula VARCHAR(25))
@@ -128,8 +127,6 @@ BEGIN
 END $$
 DELIMITER ;
 
-DROP PROCEDURE INSCRICAO;
-
-CALL INSCRICAO(2,3457125)
+#CALL INSCRICAO(2,3457125)
 
 
