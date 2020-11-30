@@ -102,6 +102,7 @@ def get_next_palestra():
     return json.dumps(obj)
 
 
+# CREATE VIEW GetPalestras AS
 # SELECT PALESTRAS.titulo, PALESTRAS.datahora, PROFESSOR.nome, VID.titulo AS palestra, VID.descricao, VID.link FROM PALESTRAS
 # JOIN PROFESSOR ON PROFESSOR.cod = PALESTRAS.prof
 # JOIN MATERIAL_VIDEO AS VID ON VID.cod = PALESTRAS.video
